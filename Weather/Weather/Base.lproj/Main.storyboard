@@ -48,17 +48,6 @@
                                 <color key="textColor" systemColor="tintColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swr-qP-ItN">
-                                <rect key="frame" x="-67" y="323" width="524" height="505"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Ok">
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="31"/>
-                                    <color key="baseForegroundColor" systemColor="linkColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="okButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kfh-DP-GND"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nz7-pz-b84">
                                 <rect key="frame" x="191" y="238" width="162" height="43"/>
                                 <constraints>
@@ -68,41 +57,54 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swr-qP-ItN">
+                                <rect key="frame" x="149" y="348" width="92" height="35"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Ok">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="31"/>
+                                    <color key="baseForegroundColor" systemColor="linkColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="okButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZdU-Ko-cNt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="NT4-mV-iAy" firstAttribute="height" secondItem="Nz7-pz-b84" secondAttribute="height" multiplier="0.790698" id="4fd-mK-EUE"/>
                             <constraint firstItem="23M-a6-55t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="61" id="88y-3R-p3F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Swr-qP-ItN" secondAttribute="bottom" constant="427" id="9Ju-H7-qMJ"/>
+                            <constraint firstItem="Swr-qP-ItN" firstAttribute="top" secondItem="Nz7-pz-b84" secondAttribute="bottom" constant="67" id="9Qv-az-MLp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="oM3-CN-rqO" secondAttribute="top" constant="76" id="Aw4-n1-MpT"/>
                             <constraint firstItem="NT4-mV-iAy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="131" id="EqP-9E-12A"/>
-                            <constraint firstItem="Swr-qP-ItN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="276" id="GyA-JV-FK5"/>
                             <constraint firstItem="iib-qK-t9c" firstAttribute="top" secondItem="vJ2-cT-Hl2" secondAttribute="bottom" constant="36" id="Hd5-vx-Vk0"/>
                             <constraint firstItem="iib-qK-t9c" firstAttribute="leading" secondItem="vJ2-cT-Hl2" secondAttribute="leading" id="Ip0-5B-dnc"/>
+                            <constraint firstItem="Swr-qP-ItN" firstAttribute="centerX" secondItem="23M-a6-55t" secondAttribute="centerX" id="K5e-vw-Zv8"/>
                             <constraint firstItem="23M-a6-55t" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" symbolic="YES" id="LSd-8Z-ylR"/>
                             <constraint firstItem="iib-qK-t9c" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="245" id="NAU-cM-he6"/>
                             <constraint firstItem="iib-qK-t9c" firstAttribute="centerY" secondItem="Nz7-pz-b84" secondAttribute="centerY" constant="-0.16666666666668561" id="Pi7-Xl-B2m"/>
-                            <constraint firstItem="Swr-qP-ItN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="147" id="Sze-Sa-Hfv"/>
+                            <constraint firstItem="Swr-qP-ItN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="149" id="XTQ-IK-L4Q"/>
                             <constraint firstItem="vJ2-cT-Hl2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-115.33333333333333" id="XYW-ba-bOf"/>
                             <constraint firstItem="NT4-mV-iAy" firstAttribute="trailing" secondItem="Nz7-pz-b84" secondAttribute="trailing" id="aRm-ym-CMH"/>
                             <constraint firstItem="Nz7-pz-b84" firstAttribute="leading" secondItem="iib-qK-t9c" secondAttribute="trailing" constant="39.999999999999972" id="alk-gI-C4i"/>
+                            <constraint firstItem="NT4-mV-iAy" firstAttribute="width" secondItem="Nz7-pz-b84" secondAttribute="width" id="crl-b8-Xbd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oM3-CN-rqO" secondAttribute="trailing" id="j57-r9-F5a"/>
                             <constraint firstItem="23M-a6-55t" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jVy-Fl-HfH"/>
                             <constraint firstItem="Nz7-pz-b84" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="191" id="l2a-et-JzL"/>
                             <constraint firstItem="NT4-mV-iAy" firstAttribute="leading" secondItem="Nz7-pz-b84" secondAttribute="leading" id="nel-wf-NIv"/>
                             <constraint firstItem="NT4-mV-iAy" firstAttribute="leading" secondItem="vJ2-cT-Hl2" secondAttribute="trailing" constant="82.666666666666657" id="o1J-M9-8Hj"/>
                             <constraint firstItem="iib-qK-t9c" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vJ2-cT-Hl2" secondAttribute="leading" id="s42-Ha-SDZ"/>
-                            <constraint firstItem="Swr-qP-ItN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-67" id="u6a-Ra-zIm"/>
-                            <constraint firstItem="Swr-qP-ItN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xPm-AE-1TB"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="loginTextField" destination="NT4-mV-iAy" id="hY2-wN-jOO"/>
-                        <outlet property="passwordTextField" destination="Nz7-pz-b84" id="dZd-Vi-T0l"/>
+                        <outlet property="passwordTextField" destination="Nz7-pz-b84" id="TB9-D3-kLs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="127.25118483412322" y="3.0769230769230766"/>
+            <point key="canvasLocation" x="126.15384615384615" y="2.8436018957345972"/>
         </scene>
     </scenes>
     <resources>
